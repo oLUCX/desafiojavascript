@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 30em;
+    width: 30em;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	border: solid 1px rgb(230, 230, 230);
+    box-shadow: 1px 2px 8px #888888bb;
+	justify-content: center;
+	align-items: center;
+	background: #7BA238;
+	gap: 1em;
+    padding: 1em 0.5em;
+}
+#colorusuario{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.card img{
+	width: 55%;
+	height: auto;
+}
+.card h3{
+    margin: 0px 2px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 1.3em;
+
+}
+.precioauto, .totalventa, .cantidad, .colour{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 1.3em;
+    margin: 0px;
+}
+.colour{
+    display: flex;
+    gap: 10px;
+}
+button{
+	width: 50%;
+	height: 2.3em;
+	background-color: #E2A30B; 
+	color: white;
+	font-size: 1em;
+    border-radius: 10px;
+}
+.colour p{
+    margin: 0px 0px 10px 0px;
+}
+
+#cantidad, #color {
+    width: 50%;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#cars {
+    width: 50%;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="" alt="Imagen auto eléctrico" id="producto">
+            <select name="cars" id="cars" onchange="cambiarImagen()">
+                <option value="" selected disabled hidden>Selecciona un color de auto</option>
+                <option value="assets/img/autoblanco.png">Blanco</option>
+                <option value="assets/img/autorosado.png">Rosado</option>
+                <option value="assets/img/autorojo.png">Rojo</option>
+                <option value="assets/img/autoazul.png">Azul</option>
+                <option value="assets/img/autoamarillo.png">Amarillo</option>
+            </select>
+            <h3>Auto electrico</h3>
+            <p class="precioauto">Precio: <span id="valor"></span></p>
+            <input id="cantidad" type="number" placeholder="Cantidad"/>
+            <input type="text" id="color" placeholder="Color en Inglés o Hexadecimal"/>
+            <button onClick="calcular()">Calcular</button>
+        </div>
+        <!-- Calculos -->
+        <div class="card">
+            <p class="totalventa">Valor total: <span id="valortotal">0</span></p>
+            <p class="cantidad">Cantidad: <span id="quantity">0</span></p>
+            <div class="colour">
+                <p>Color: </p>
+                <div id="colorusuario">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
